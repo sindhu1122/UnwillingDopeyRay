@@ -1,20 +1,9 @@
-function add(a,b)
-{
-  return a+b
-}
-function sub(a,b)
-{
-  return a-b
-}
-function profit(cp,sp)
-{
-  return sub(sp,cp)
-}
+var b=require ('./business')
 x=10
 y=20
-z=add(x,y)
+z=b.add(x,y)
 cp=5000
 sp=10000
-console.log(sub(x,y))
+console.log(b.sub(x,y))
 console.log(z)
-console.log(profit(cp,sp))
+console.log(b.profit(cp,sp))
